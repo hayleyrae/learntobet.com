@@ -6,7 +6,7 @@
   <title>Learn to Bet — Where Luck Meets Logic</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Courier New', Courier, monospace;
       margin: 0;
       background: #0a3d62;
       color: #222;
@@ -21,22 +21,27 @@
       height: auto;
     }
     nav {
-      background: white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background: #0a3d62;
       padding: 10px 0;
-    }
-    nav ul {
-      list-style: none;
       display: flex;
       justify-content: center;
-      gap: 30px;
-      margin: 0;
-      padding: 0;
-      font-weight: bold;
+      gap: 20px;
     }
     nav a {
+      background: #f4f4f4;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: 2px solid #222;
       text-decoration: none;
       color: #0a3d62;
+      font-weight: bold;
+      box-shadow: 2px 2px 0 #222;
+      transform: rotate(-2deg);
+      transition: all 0.2s ease;
+    }
+    nav a:hover {
+      background: #e0e0e0;
+      transform: rotate(2deg) scale(1.05);
     }
     main {
       max-width: 800px;
@@ -63,6 +68,7 @@
       text-decoration: none;
       border-radius: 5px;
       display: inline-block;
+      font-family: 'Courier New', Courier, monospace;
     }
   </style>
 </head>
@@ -73,11 +79,9 @@
 </header>
 
 <nav>
-  <ul>
-    <li><a href="blackjack.html">Blackjack</a></li>
-    <li><a href="sports-betting.html">Sports Betting</a></li>
-    <li><a href="parlay-calculator.html">Parlay Calculator</a></li>
-  </ul>
+  <a href="blackjack.html">Blackjack</a>
+  <a href="sports-betting.html">Sports Betting</a>
+  <a href="parlay-calculator.html">Parlay Calculator</a>
 </nav>
 
 <main>
